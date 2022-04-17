@@ -1,7 +1,15 @@
-export const Home = () => {
+import { AddTeacher } from "./AddTeacher"
+import { Table } from "./table"
+
+
+export const Home = (check) => {
+
+    const value = check
     return (
         <div>
-            home page
+            {value ? <><AddTeacher/>
+            <br />
+            <Table/></> : ""}
         </div>
     )
 } 

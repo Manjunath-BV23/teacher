@@ -1,14 +1,23 @@
 import { XIcon } from '@heroicons/react/outline'
 import axios from 'axios';
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
 
 
 export const Login = ()=>{
+    const [check, setCheck] = useState(false);
+    
+    const change = () => {
+        setCheck(true)
+    }
+
+    const [value, setValue] = useState(false)
+    
 
     const [user, setUser] = useState({});
 
     useEffect(() =>{
-        axios.get("http://localhost:1342/user", {withCredentials:true}).then(res => setUser(res.data))
+        axios.get("http://localhost:8080/admindata", {withCredentials:true}).then(res => setUser(res.data))
     },[])
     return (
         <>
@@ -131,7 +140,7 @@ export const Login = ()=>{
                   border : "1px solid gray",
                   backgroundColor: "#fcfcfb#fff"
                 }}></input> <br></br>
-                <button style={{
+                <a val = {check} href='/'><button onClick={change} style={{
                     width : "45%",
                     height : "45px",
                     marginTop : "20px",
@@ -140,7 +149,7 @@ export const Login = ()=>{
                     backgroundColor : "#0079d3",
                     color :"whitesmoke",
                     fontWeight : "800"
-                }}>Log In</button>
+                }} >Log In</button></a>
   
                 <p style={{
                   fontSize :"12px",
@@ -161,7 +170,7 @@ export const Login = ()=>{
                   fontWeight : "600",
                   color : "#0079d3",
                   fontSize :"13px"
-                }}><a href='/register' style = {{color : "#0079d3", textDecoration : "none"}}>   SIGN UP</a></spam></p>
+                }}><a href='/register'  style = {{color : "#0079d3", textDecoration : "none"}}>   SIGN UP</a></spam></p>
             </div>  
           </div>
         </div>

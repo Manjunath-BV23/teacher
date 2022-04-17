@@ -17,6 +17,63 @@
       "username": "manju123",
       "password": "1234",
       "id": 3
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": 6
+    }
+  ],
+  "teacher": [
+    {
+      "teacher_name": "Manjunath",
+      "gender": "Male",
+      "age": "23",
+      "grade": "A",
+      "section": "B",
+      "subject": "Mathematics",
+      "username": "Manjunath",
+      "id": 1
+    },
+    {
+      "teacher_name": "Nagesh",
+      "gender": "Male",
+      "age": "23",
+      "grade": "A",
+      "section": "C",
+      "subject": "Physics",
+      "id": 2
+    },
+    {
+      "teacher_name": "Sowbhagya",
+      "gender": "Female",
+      "age": "23",
+      "grade": "B",
+      "section": "A",
+      "subject": "Thermodynamics",
+      "id": 3
+    },
+    {
+      "teacher_name": "Rakshitha",
+      "gender": "Female",
+      "age": "23",
+      "grade": "C",
+      "section": "B",
+      "subject": "Java",
+      "id": 4
     }
   ]
 }
