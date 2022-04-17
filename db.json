@@ -1,0 +1,22 @@
+{
+  "admindata": [
+    {
+      "email": "manju@gmail.com",
+      "username": "manju123",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "manju@gmail.com",
+      "username": "manju123",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "email": "manju@gmail.com",
+      "username": "manju123",
+      "password": "1234",
+      "id": 3
+    }
+  ]
+}

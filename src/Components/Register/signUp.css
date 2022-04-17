@@ -1,0 +1,6 @@
+.inputs{
+    transition: 1.5em;;
+}
+.inputs:hover{
+    transform: rotate();
+}
